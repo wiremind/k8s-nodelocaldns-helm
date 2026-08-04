@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    ":disableRateLimiting"
+  ],
+  "enabledManagers": [
+    "helm-values"
+  ],
+  "helm-values": {
+    "managerFilePatterns": [
+      "/charts/node-local-dns/values\\.ya?ml$/"
+    ]
+  },
+  "packageRules": [
+    {
+      "description": "The chart exists to ship k8s-dns-node-cache, so keep appVersion in step with the image it deploys.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["registry.k8s.io/dns/k8s-dns-node-cache"],
+      "bumpVersion": "minor"
+    }
+  ]
+}

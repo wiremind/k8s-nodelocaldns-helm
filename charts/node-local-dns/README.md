@@ -2,7 +2,7 @@
 
 NodeLocal DNS Cache helm chart
 
-![Version: 2.5.0](https://img.shields.io/badge/Version-2.5.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.23.1](https://img.shields.io/badge/AppVersion-1.23.1-informational?style=flat-square)
+![Version: 2.6.0](https://img.shields.io/badge/Version-2.6.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.26.8](https://img.shields.io/badge/AppVersion-1.26.8-informational?style=flat-square)
 
 [<img src="https://lablabs.io/static/ll-logo.png" width=350px>](https://lablabs.io/)
 
@@ -72,7 +72,7 @@ Latest available `node-local-dns` image can be found at [node-local-dns google c
 | image.args.upstreamSvc | string | `"kube-dns"` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"registry.k8s.io/dns/k8s-dns-node-cache"` |  |
-| image.tag | string | `"1.23.0"` |  |
+| image.tag | string | `"1.26.8"` |  |
 | imagePullSecrets | list | `[]` |  |
 | metrics.port | int | `9253` |  |
 | metrics.prometheusScrape | string | `"true"` |  |

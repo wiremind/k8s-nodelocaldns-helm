@@ -1,8 +1,8 @@
 ---
 apiVersion: v2
 name: node-local-dns
-version: 2.5.0
-appVersion: 1.23.1
+version: 2.6.0
+appVersion: 1.26.8
 home: https://github.com/lablabs/k8s-nodelocaldns-helm
 description: NodeLocal DNS Cache helm chart
 icon: https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg
@@ -20,6 +20,5 @@ engine: gotpl
 type: application
 annotations:
   artifacthub.io/changes: |
-    - Fix cache.serve_stale never being read, the template tested cache.server_stale
-    - Support duration and refresh_mode for cache.serve_stale
-    - Fix forward.health_check being rendered as expire, which disabled upstream health checking
+    - Bump k8s-dns-node-cache to 1.26.8
+    - Track the node-cache image with Renovate
