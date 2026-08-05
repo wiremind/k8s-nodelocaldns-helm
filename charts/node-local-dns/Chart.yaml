@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 name: node-local-dns
-version: 2.6.0
+version: 2.7.0
 appVersion: 1.26.8
 home: https://github.com/lablabs/k8s-nodelocaldns-helm
 description: NodeLocal DNS Cache helm chart
@@ -20,5 +20,6 @@ engine: gotpl
 type: application
 annotations:
   artifacthub.io/changes: |
+    - Support the VERIFY_TIMEOUT argument of cache.serve_stale
     - Bump k8s-dns-node-cache to 1.26.8
     - Track the node-cache image with Renovate
